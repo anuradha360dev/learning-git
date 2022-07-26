@@ -15,4 +15,14 @@ function maxSubArraySum(a, size)
             max_ending_here = 0 
     }
     return max_so_far
+function largest(arr) {
+    let i;
+    let max = arr[0];
+    
+    for (i = 1; i < arr.length; i++) {
+        if (arr[i] > max)
+            max = arr[i];
+    }
+     
+  return max;
 }
